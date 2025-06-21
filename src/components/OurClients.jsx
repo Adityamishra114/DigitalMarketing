@@ -1,20 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Logo from "../assets/logo.png";
 import AboutBg from "../assets/Aboutbg.png";
-
-const logos = [
-  { name: "Random House", src: Logo },
-  { name: "Daiwa", src: Logo },
-  { name: "Gold Dust", src: Logo },
-  { name: "LoopLoc", src: Logo },
-  { name: "Circa", src: Logo },
-  { name: "Broadway", src: Logo },
-  { name: "MPA", src: Logo },
-  { name: "Mountaire", src: Logo },
-  { name: "Blue Owl", src: Logo },
-  { name: "New Client", src: Logo },
-];
+import { logos } from "../../data"; 
 
 const chunkArray = (array, size) => {
   const chunked = [];
@@ -24,25 +11,13 @@ const chunkArray = (array, size) => {
   return chunked;
 };
 
-const getVisibleCount = () => {
-  if (window.innerWidth < 480) return 1;
-  if (window.innerWidth < 768) return 2;
-  if (window.innerWidth < 1024) return 3;
-  return 4;
-};
+const rows = 2;
+const logosPerRow = 4;
+const perPage = rows * logosPerRow;
 
 const OurClients = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
 
-  useEffect(() => {
-    const handleResize = () => setVisibleCount(getVisibleCount());
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const rows = 2;
-  const perPage = visibleCount * rows;
   const pagedLogos = chunkArray(logos, perPage);
   const totalPages = pagedLogos.length;
 
@@ -91,11 +66,11 @@ const OurClients = () => {
         </div>
         <div className="grid grid-cols-1 gap-4 transition-all duration-500">
           {Array.from({ length: rows }).map((_, rowIndex) => (
-            <div key={rowIndex} className={`grid grid-cols-${visibleCount} gap-4`}>
+            <div key={rowIndex} className={`grid grid-cols-4 gap-4`}>
               {pagedLogos[currentSlide]
                 ?.slice(
-                  rowIndex * visibleCount,
-                  rowIndex * visibleCount + visibleCount
+                  rowIndex * logosPerRow,
+                  rowIndex * logosPerRow + logosPerRow
                 )
                 .map((logo, index) => (
                   <div

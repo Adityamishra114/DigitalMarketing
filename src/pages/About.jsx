@@ -4,7 +4,7 @@ import AboutImage from "../assets/Aboutbgacc.webp"
 import ContactForm from '../components/ContactFormSection'
 import OurClients from '../components/OurClients'
 import BannerAll from '../components/BannerAll'
-import bannerImg from "../assets/Banner2.avif"
+import bannerImg from "../assets/Digital2.jpeg"
 const About = () => {
   return (
     <>

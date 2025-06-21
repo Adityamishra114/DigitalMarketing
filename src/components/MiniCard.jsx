@@ -1,19 +1,5 @@
 import React from "react";
-import DM from "../assets/1dm.png"
-const cardData = [
-  { id: 1, image: DM, text: "Artificial Intelligence" },
-  { id: 2, image: DM, text: "Web Development" },
-  { id: 3, image: DM, text: "UI/UX Design" },
-  { id: 4, image: DM, text: "Digital Marketing" },
-  { id: 5, image: DM, text: "Data Science" },
-  { id: 6, image: DM, text: "Cyber Security" },
-  { id: 7, image: DM, text: "App Development" },
-  { id: 8, image: DM, text: "Cloud Computing" },
-  { id: 9, image: DM, text: "Blockchain" },
-  { id: 10, image: DM, text: "Robotics" },
-  { id: 11, image: DM, text: "HR & Soft Skills" },
-  { id: 12, image: DM, text: "Business Strategy" },
-];
+import { cardData } from "../../data"; 
 
 const MiniCard = () => {
   return (
@@ -30,7 +16,7 @@ const MiniCard = () => {
           <div
             key={card.id}
             className="text-black flex items-center gap-3 p-3 rounded"
-  style={{ boxShadow: "2px 0 35px 0 rgba(68, 88, 144, 0.12)" }}
+            style={{ boxShadow: "2px 0 35px 0 rgba(68, 88, 144, 0.12)" }}
           >
             <img
               src={card.image}

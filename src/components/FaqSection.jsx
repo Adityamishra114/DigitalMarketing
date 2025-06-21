@@ -1,34 +1,6 @@
 import React from "react";
 import FAQItem from "./FaqItem";
-
-const faqs = [
-  {
-    question: "Would a website redesign bring more traffic?",
-    answer:
-      "Yes, a redesign with better UX and SEO optimization can significantly increase traffic.",
-  },
-  {
-    question: "My website isn't generating enough leads.",
-    answer:
-      "A combination of CRO strategies and clearer CTAs can help convert more visitors.",
-  },
-  {
-    question: "My ecommerce website is continuously losing sales.",
-    answer:
-      "We analyze funnel performance and improve speed, trust signals, and UX to retain users.",
-  },
-  {
-    question:
-      "I want to improve ROI on Digital Marketing, but staying up to speed on trends is a full-time job.",
-    answer:
-      "Our marketing team stays on top of trends to ensure maximum ROI with minimal effort on your part.",
-  },
-  {
-    question: "Managing a digital campaign takes too much time.",
-    answer:
-      "Let our experts handle everything from setup to reporting so you can focus on your business.",
-  },
-];
+import { faqs } from "../../data"; 
 
 const FAQSection = () => {
   return (

@@ -1,39 +1,7 @@
 import React, { useState } from "react";
-import blog1 from "../assets/Banner1.avif";
-import blog2 from "../assets/Banner2.avif";
-import blog3 from "../assets/Banner3.avif";
+import { blogData } from "../../data"; 
 
 const tabs = ["All", "Design", "Development", "Marketing"];
-
-const blogData = [
-  {
-    id: 1,
-    img: blog1,
-    date: "05-29-2025",
-    title: "Best Web Design Companies in 2025 [June Update]",
-    excerpt:
-      "Whether you're building a new website or revamping an existing one, partnering with a top web design company is crucial to ensuring a site that is [...]",
-    category: "Design",
-  },
-  {
-    id: 2,
-    img: blog2,
-    date: "05-29-2025",
-    title: "TOP Web Development Companies in 2025 [June Update]",
-    excerpt:
-      "To ensure a fair and objective evaluation, we analyzed numerous web design agencies based on several criteria. These include their portfolio of work [...]",
-    category: "Development",
-  },
-  {
-    id: 3,
-    img: blog3,
-    date: "05-29-2025",
-    title: "Top 10 Best Financial Website Designs [June 2025 Update]",
-    excerpt:
-      "Key Takeaways: These financial website designs use an intuitive flow and stellar UI/UX experience to capture site visitors' business [...]",
-    category: "Marketing",
-  },
-];
 
 const BlogSection = () => {
   const [activeTab, setActiveTab] = useState("All");

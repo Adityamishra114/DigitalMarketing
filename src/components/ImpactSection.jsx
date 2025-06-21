@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-const impactItems = [
-  { title: 650, suffix: "+", description: "Websites Launched" },
-  { title: 23, suffix: "+", description: "Years of Experience" },
-  { title: 4.9, suffix: " ★", description: "Avg. Google Rating", isDecimal: true },
-  { title: 500, suffix: "+", description: "Happy Clients" },
-];
+import { impactItems } from "../../data"; 
 
 const TypingHeading = ({ text, speed = 100 }) => {
   const [displayed, setDisplayed] = useState("");

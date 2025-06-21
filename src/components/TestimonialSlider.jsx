@@ -1,38 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-import Banner from "../assets/adm.webp"
-import Banner1 from "../assets/mdm.webp"
-import Banner2 from "../assets/pdm.webp"
-const testimonials = [
-  {
-    image: Banner, 
-    quoteTitle: "Lounge Lizard genuinely cares about their customers.",
-    quoteText:
-      "Lounge Lizard was able to take an abstract idea for an app and bring it to reality, while staying true to the original vision.",
-    author: "PRESIDENT",
-    company: "STUDR",
-    rating: 5,
-  },
-  {
-    image: Banner1,
-    quoteTitle: "Exceptional creativity and development support.",
-    quoteText:
-      "The app’s design and usability were outstanding. The agency distinguished themselves with responsive communication.",
-    author: "CEO",
-    company: "CREATEX",
-    rating: 5,
-  },
-  {
-    image: Banner2,
-    quoteTitle: "Fantastic end-to-end experience with Lounge Lizard.",
-    quoteText:
-      "They delivered high-quality designs with strong attention to detail and customer satisfaction.",
-    author: "MARKETING HEAD",
-    company: "TECHWAVE",
-    rating: 5,
-  },
-];
+import { testimonials } from "../../data";
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
