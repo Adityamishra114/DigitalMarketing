@@ -7,15 +7,15 @@ import Banner2 from "./src/assets/pdm.webp";
 import DM from "./src/assets/1dm.png";
 
 // BlogSection data
-import blog1 from "./src/assets/Banner1.avif";
-import blog2 from "./src/assets/Banner2.avif";
-import blog3 from "./src/assets/Banner3.avif";
+import blog1 from "./src/assets/web.jpg";
+import blog2 from "./src/assets/design.jpg";
+import blog3 from "./src/assets/digital.jpg";
 
 // OurClients data
 import Logo from "./src/assets/logo.png";
 
 // HeroSection data
-import BannerHS from "./src/assets/Bannerhs.avif";
+import BannerHS from "./src/assets/Aboutbgacc.webp";
 
 // AboutHeroSection data
 import sampleImage from "./src/assets/Aboutbgacc.webp";
