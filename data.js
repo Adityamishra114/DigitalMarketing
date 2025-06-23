@@ -1,4 +1,5 @@
 // All imported Icons
+import { FaLightbulb, FaPenNib, FaQuestionCircle, FaFlag } from "react-icons/fa";
 import { MdOutlineLightbulb } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
 import {
@@ -10,14 +11,29 @@ import {
   FaCertificate,
   FaHandsHelping,
   FaUserTie,
+  FaSearch, FaHandHoldingUsd,
 } from "react-icons/fa";
+
+
+
 
 // Award images About us section
 import award1 from "./src/assets/award1.webp"; 
 import award2 from "./src/assets/award2.webp";
 import award3 from "./src/assets/award3.webp";
 import award4 from "./src/assets/award4.webp";
-
+// certificate image
+import Cert1 from "./src/assets/certificate1.jpg";
+import Cert2 from "./src/assets/certificate2.jpg";
+import Cert3 from "./src/assets/certificate3.jpg";
+import Cert4 from "./src/assets/certificate3.jpg";
+import Cert5 from "./src/assets/certificate3.jpg";
+//company logo 
+import Google from "./src/assets/google.jpg";
+import Walmart from "./src/assets/walmart.jpg";
+import AirBnb from "./src/assets/airbnb.png";
+import MamaEarth from "./src/assets/mamaearth.png"; 
+import Accenture from "./src/assets/accenture.jpg";
 
 // TestimonialSlider data
 import Banner from "./src/assets/adm.webp";
@@ -42,7 +58,8 @@ import Logo from "./src/assets/logo.png";
 
 // HeroSection data
 import BannerHS from "./src/assets/Aboutbgacc.webp";
-
+//AboutBanner image
+import AboutBanner from "./src/assets/Digital5.jpeg"
 // AboutHeroSection data
 import sampleImage from "./src/assets/Aboutbgacc.webp";
 
@@ -494,7 +511,7 @@ export const aboutInfo = {
         "Our digital marketing courses aim to help you achieve every goal in just one shot with 36+ modules. You can choose according to your need and interest. We provide 100% placement assistance with life-time support through resume-building, Q&A sessions, Google certification, and NCoEM compliance.",
     },
     {
-      title: "Our Vision — Shaping Future Marketers",
+      title: "Our Mission — Shaping Future Marketers",
       content:
         "We guide every student with the help of top trainers and industry experts to make them market-ready. Our course is driven by innovation and a future-ready vision.",
     },
@@ -506,3 +523,156 @@ export const aboutInfo = {
   ],
 };
 
+
+export const steps = [
+  {
+    title: "Learn",
+    description:
+      "Upskill yourself by gaining insights from leading professionals' vast experience.",
+    icon: FaLightbulb,
+    badge: "Live Classes + Self-Paced",
+  },
+  {
+    title: "Practice",
+    description:
+      "Sharpen your skills by learning through course assignments, live projects, and regular assessments and quizzes.",
+    icon: FaPenNib,
+  },
+  {
+    title: "Ask",
+    description:
+      "Resolve your queries from industry experts with our dedicated 1:1 doubt-clearing sessions.",
+    icon: FaQuestionCircle,
+  },
+  {
+    title: "Build",
+    description:
+      "Craft a diverse portfolio and appealing resume, and optimize LinkedIn to showcase your digital marketing skills.",
+    icon: FaFlag,
+  },
+];
+
+
+
+export const certificates = [
+  {
+    id: 1,
+    name: "Certificate 1",
+    image: Cert1,
+  },
+  {
+    id: 2,
+    name: "Certificate 2",
+    image: Cert2,
+  },
+  {
+    id: 3,
+    name: "Certificate 3",
+    image: Cert3,
+  },
+  {
+    id: 4,
+    name: "Certificate 3",
+    image: Cert4,
+  },
+  {
+    id: 5,
+    name: "Certificate 3",
+    image: Cert5,
+  },
+];
+export const topCompanies = [
+  { id: 1, name: "Google", logo: Google },
+  { id: 2, name: "Meta", logo: Walmart },
+  { id: 3, name: "Expedia", logo: MamaEarth },
+  { id: 4, name: "Lenskart", logo: Accenture },
+  { id: 5, name: "OLA", logo: AirBnb },
+  { id: 6, name: "Walmart", logo:Walmart  },
+  { id: 7, name: "Duolingo", logo: MamaEarth },
+  { id: 8, name: "Airbnb", logo: AirBnb },
+  { id: 9, name: "Adobe", logo: Google },
+  { id: 10, name: "Mamaearth", logo: MamaEarth },
+  { id: 11, name: "Accenture", logo: Accenture },
+];
+export const featureStats = [
+  {
+    id: 1,
+    icon: FaUserGraduate,
+    label: "STUDENTS",
+    value: 9450,
+    suffix: "+",
+  },
+  {
+    id: 2,
+    icon: FaSearch,
+    label: "HIRING PARTNERS",
+    value: 300,
+    suffix: "+",
+  },
+  {
+    id: 3,
+    icon: FaHandHoldingUsd,
+    label: "NO COST EMI",
+    value: 5000,
+    prefix: "₹",
+  },
+  {
+    id: 4,
+    icon: FaLightbulb,
+    label: "BRANDS CASE STUDIES",
+    value: 50,
+    suffix: "+",
+  },
+];
+
+export const courseOptions = [
+  "Digital Marketing",
+  "Web Development",
+  "Graphic Design",
+  "UI/UX Design",
+  "Animation & Multimedia",
+  "Others",
+];
+
+export const defaultFormData = {
+  name: "",
+  phone: "",
+  course: "",
+  email: "",
+  message: "",
+};
+export const steps1 = [
+  {
+    title: "Learn",
+    icon: "https://deen3evddmddt.cloudfront.net/images/courses-details/learn-icon.svg",
+    iconFilled: "https://deen3evddmddt.cloudfront.net/images/courses-details/blue-learn-icon.svg",
+    badge: "Live Classes",
+    badgeIcon: "https://deen3evddmddt.cloudfront.net/images/icons/ellipse-icon.svg",
+    badge2: "Self-Paced",
+    description: "Upskill yourself by gaining insights from leading professionals' vast experience."
+  },
+  {
+    title: "Practice",
+    icon: "https://deen3evddmddt.cloudfront.net/images/courses-details/practice-icon.svg",
+    iconFilled: "https://deen3evddmddt.cloudfront.net/images/courses-details/blue-practice-icon.svg",
+    description: "Sharpen your skills by learning through course assignments, live projects, and regular assessments and quizzes."
+  },
+  {
+    title: "Ask",
+    icon: "https://deen3evddmddt.cloudfront.net/images/courses-details/build-icon.svg",
+    iconFilled: "https://deen3evddmddt.cloudfront.net/images/courses-details/blue-build-icon.svg",
+    description: "Resolve your queries from industry experts with our dedicated 1:1 doubt-clearing sessions."
+  },
+  {
+    title: "Build",
+    icon: "https://deen3evddmddt.cloudfront.net/images/courses-details/success-icon.svg",
+    iconFilled: "https://deen3evddmddt.cloudfront.net/images/courses-details/blue-success-icon.svg",
+    description: "Craft a diverse portfolio and appealing resume, and optimize LinkedIn to showcase your digital marketing skills."
+  }
+];
+export const bannerContent = {
+  image: AboutBanner, 
+  heading: "Welcome to DG Royals",
+  paragraph:
+    "Empowering learners through industry-ready digital marketing courses, live mentorship, and hands-on training.",
+};

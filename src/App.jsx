@@ -12,10 +12,12 @@ import CallToAction from "./components/CallToAction";
 import AuthTabs from "./components/AuthTabs";
 import Profile from "./pages/Profile";
 import AdminDashboard from "./pages/AdminDashboard";
+import TopBar from "./components/TopBar";
 
 const App = () => {
   return (
     <>
+    <TopBar/>
       <Header />
       <SocialIcons />
       <CallToAction />

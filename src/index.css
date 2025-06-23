@@ -32,3 +32,17 @@
  padding: 0px 15px;
  margin: 0px auto;
 }
+
+.marquee-track {
+  width: max-content;
+  animation: scroll-marquee 25s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

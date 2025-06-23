@@ -22,7 +22,7 @@ const AboutInfo = () => {
             />
           ))}
         </div>
-        <div className="w-full lg:w-[60%] space-y-5">
+        <div className="w-full lg:w-[60%] space-y-3">
           <h4 className="text-sm uppercase font-semibold text-gray-500">
             {aboutInfo.headingTop}
           </h4>
