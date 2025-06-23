@@ -1,3 +1,24 @@
+// All imported Icons
+import { MdOutlineLightbulb } from "react-icons/md";
+import { PiCertificateBold } from "react-icons/pi";
+import {
+  FaChalkboardTeacher,
+  FaCalendarAlt,
+  FaLaptopCode,
+  FaUserGraduate,
+  FaProjectDiagram,
+  FaCertificate,
+  FaHandsHelping,
+  FaUserTie,
+} from "react-icons/fa";
+
+// Award images About us section
+import award1 from "./src/assets/award1.webp"; 
+import award2 from "./src/assets/award2.webp";
+import award3 from "./src/assets/award3.webp";
+import award4 from "./src/assets/award4.webp";
+
+
 // TestimonialSlider data
 import Banner from "./src/assets/adm.webp";
 import Banner1 from "./src/assets/mdm.webp";
@@ -5,6 +26,11 @@ import Banner2 from "./src/assets/pdm.webp";
 
 // MiniCard data
 import DM from "./src/assets/1dm.png";
+import DM1 from "./src/assets/2dm.png";
+import DM2 from "./src/assets/3dm.png";
+import DM3 from "./src/assets/4dm.png";
+import DM4 from "./src/assets/5dm.png";
+import DM5 from "./src/assets/6dm.png";
 
 // BlogSection data
 import blog1 from "./src/assets/web.jpg";
@@ -58,17 +84,17 @@ export const testimonials = [
 
 export const cardData = [
   { id: 1, image: DM, text: "Artificial Intelligence" },
-  { id: 2, image: DM, text: "Web Development" },
-  { id: 3, image: DM, text: "UI/UX Design" },
-  { id: 4, image: DM, text: "Digital Marketing" },
-  { id: 5, image: DM, text: "Data Science" },
-  { id: 6, image: DM, text: "Cyber Security" },
+  { id: 2, image: DM1, text: "Web Development" },
+  { id: 3, image: DM2, text: "UI/UX Design" },
+  { id: 4, image: DM3, text: "Digital Marketing" },
+  { id: 5, image: DM4, text: "Data Science" },
+  { id: 6, image: DM5, text: "Cyber Security" },
   { id: 7, image: DM, text: "App Development" },
-  { id: 8, image: DM, text: "Cloud Computing" },
-  { id: 9, image: DM, text: "Blockchain" },
-  { id: 10, image: DM, text: "Robotics" },
-  { id: 11, image: DM, text: "HR & Soft Skills" },
-  { id: 12, image: DM, text: "Business Strategy" },
+  { id: 8, image: DM1, text: "Cloud Computing" },
+  { id: 9, image: DM2, text: "Blockchain" },
+  { id: 10, image: DM3, text: "Robotics" },
+  { id: 11, image: DM4, text: "HR & Soft Skills" },
+  { id: 12, image: DM5, text: "Business Strategy" },
 ];
 
 export const blogData = [
@@ -135,58 +161,6 @@ export const images = [
   },
 ];
 
-export const accordionItems = [
-  {
-    title: "BRANDING",
-    content: [
-      "Brand Storytelling",
-      "Brand Voice Copywriting",
-      "Corporate ID",
-      "Corporate Nomenclature",
-      "Slogans",
-      "Collateral Design",
-    ],
-  },
-  {
-    title: "DESIGN",
-    content: [
-      "UI/UX Design",
-      "Responsive Web Design",
-      "Mobile App Design",
-      "Email Template Design",
-      "Logo & Identity Design",
-    ],
-  },
-  {
-    title: "DIGITAL MARKETING",
-    content: [
-      "Search Engine Optimization (SEO)",
-      "Pay-Per-Click Advertising (PPC)",
-      "Social Media Marketing",
-      "Email Campaigns",
-      "Content Strategy",
-    ],
-  },
-  {
-    title: "DEVELOPMENT",
-    content: [
-      "Custom Web Development",
-      "E-commerce Solutions",
-      "Content Management Systems",
-      "App Development",
-    ],
-  },
-  {
-    title: "SEO",
-    content: [
-      "Technical SEO",
-      "Keyword Research",
-      "On-Page Optimization",
-      "Backlink Strategy",
-      "Analytics & Reporting",
-    ],
-  },
-];
 
 export const courses = [
   {
@@ -309,16 +283,7 @@ export const impactItems = [
   { title: 500, suffix: "+", description: "Happy Clients" },
 ];
 
-import {
-  FaChalkboardTeacher,
-  FaCalendarAlt,
-  FaLaptopCode,
-  FaUserGraduate,
-  FaProjectDiagram,
-  FaCertificate,
-  FaHandsHelping,
-  FaUserTie,
-} from "react-icons/fa";
+
 
 export const features = [
   { id: 1, icon: FaChalkboardTeacher, label: "Expert Trainers" },
@@ -331,31 +296,213 @@ export const features = [
   { id: 8, icon: FaHandsHelping, label: "100% Job Assistance" },
 ];
 
-export const faqs = [
+export const accordionItems = [
   {
-    question: "Would a website redesign bring more traffic?",
-    answer:
-      "Yes, a redesign with better UX and SEO optimization can significantly increase traffic.",
+    title: "BRANDING",
+    faqs: [
+      {
+        question: "What is brand storytelling?",
+        answer:
+          "Brand storytelling is the art of using a narrative to connect your brand to customers, providing meaning and emotional resonance.",
+      },
+      {
+        question: "Why is brand identity important?",
+        answer:
+          "A strong brand identity builds trust, recognition, and emotional connection with your audience, setting you apart in the market.",
+      },
+      {
+        question: "Do you help with logo design?",
+        answer:
+          "Yes, we create custom logo designs that align with your brand's voice, values, and target audience.",
+      },
+      {
+        question: "What does a branding package include?",
+        answer:
+          "Our branding packages typically include logo, typography, color palette, voice guidelines, and key marketing assets.",
+      },
+      {
+        question: "Can you rebrand an existing business?",
+        answer:
+          "Absolutely! We offer brand audits, redesigns, and strategic repositioning for existing businesses ready for a refresh.",
+      },
+    ],
   },
   {
-    question: "My website isn't generating enough leads.",
-    answer:
-      "A combination of CRO strategies and clearer CTAs can help convert more visitors.",
+    title: "DESIGN",
+    faqs: [
+      {
+        question: "What is UI/UX design?",
+        answer:
+          "UI/UX design is the process of creating user interfaces and experiences that are visually appealing and easy to use.",
+      },
+      {
+        question: "How is responsive design implemented?",
+        answer:
+          "Responsive design ensures a website looks good on all devices using flexible layouts and media queries.",
+      },
+      {
+        question: "What tools do you use for design?",
+        answer:
+          "We use Figma, Adobe XD, Sketch, and Photoshop for various design tasks.",
+      },
+      {
+        question: "Do you design logos and brand kits?",
+        answer:
+          "Yes, we offer complete branding services including logos, style guides, and visual identity kits.",
+      },
+      {
+        question: "Can I request revisions on the design?",
+        answer:
+          "Yes, we provide a set number of revisions to ensure you’re satisfied with the design outcome.",
+      },
+    ],
   },
   {
-    question: "My ecommerce website is continuously losing sales.",
-    answer:
-      "We analyze funnel performance and improve speed, trust signals, and UX to retain users.",
+    title: "DIGITAL MARKETING",
+    faqs: [
+      {
+        question: "What platforms do you use for digital marketing?",
+        answer:
+          "We use Google Ads, Facebook Ads, Instagram, LinkedIn, and various email marketing platforms.",
+      },
+      {
+        question: "What is included in your SEO service?",
+        answer:
+          "Technical SEO, keyword optimization, backlinking, and analytics reporting are all included.",
+      },
+      {
+        question: "Do you run paid ad campaigns?",
+        answer:
+          "Yes, we create and manage PPC campaigns on Google and social media platforms.",
+      },
+      {
+        question: "How do you track campaign success?",
+        answer:
+          "We use tools like Google Analytics and Meta Pixel to measure KPIs and performance metrics.",
+      },
+      {
+        question: "Is content marketing part of your services?",
+        answer:
+          "Yes, we offer blogging, content planning, and strategy to boost organic traffic.",
+      },
+    ],
   },
   {
-    question:
-      "I want to improve ROI on Digital Marketing, but staying up to speed on trends is a full-time job.",
-    answer:
-      "Our marketing team stays on top of trends to ensure maximum ROI with minimal effort on your part.",
-  },
-  {
-    question: "Managing a digital campaign takes too much time.",
-    answer:
-      "Let our experts handle everything from setup to reporting so you can focus on your business.",
+    title: "DEVELOPMENT",
+    faqs: [
+      {
+        question: "Do you build custom websites?",
+        answer:
+          "Yes, we specialize in custom-built websites tailored to your business needs and target audience.",
+      },
+      {
+        question: "What platforms do you use for e-commerce development?",
+        answer:
+          "We use Shopify, WooCommerce, and custom solutions built with React, Node.js, and MongoDB.",
+      },
+      {
+        question: "Is mobile responsiveness included?",
+        answer:
+          "Yes, all websites we develop are fully responsive across mobile, tablet, and desktop devices.",
+      },
+      {
+        question: "Can I manage my own content?",
+        answer:
+          "Absolutely! We integrate CMS platforms like WordPress or custom CMS so you can easily manage your site content.",
+      },
+      {
+        question: "Do you offer ongoing support and maintenance?",
+        answer:
+          "Yes, we provide maintenance packages that include updates, bug fixes, security monitoring, and performance optimization.",
+      },
+    ],
   },
 ];
+
+export const officeData = {
+  heading: "Corporate",
+  highlight: "Office",
+  locationName: "Digital Vidya, Gurgaon",
+  address:
+    "Unit No. 304 – B, 3rd Floor, JMD Regent Plaza, MG Road, Gurugram, Haryana – 122001",
+  email: "info@digitalvidya.com",
+  phone: "+91-8010033033",
+  mapSrc:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.467478261944!2d77.0805174150823!3d28.614179791285388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d84519eec41%3A0x65e498e225fc0995!2sDigital%20Vidya!5e0!3m2!1sen!2sin!4v1663671765030!5m2!1sen!2sin",
+};
+
+
+export const upskillsData = [
+  {
+    id: 1,
+    icon: FaChalkboardTeacher,
+    title: "Advance Knowledge",
+    subtitle:
+      "Make your own website | Run live marketing campaigns | Live projects | Case studies",
+    description:
+      "DIDM has designed a practical oriented advanced digital marketing course that best suits from student to a marketing specialist. While learning, get exposure to website designing without coding, live projects, and case studies to enhance your skills.",
+  },
+  {
+    id: 2,
+    icon: FaUserGraduate,
+    title: "Quality Training",
+    subtitle:
+      "Online and Offline Training | Flexible Batch Timings | Weekday and Weekend Batch | Micro Batch Size",
+    description:
+      "DIDM is committed to deliver the best digital marketing course learning outcomes with the facility of online/offline training and the option of choosing flexible batch timings by just dialing a number to our 24x7 customer support.",
+  },
+  {
+    id: 3,
+    icon: MdOutlineLightbulb,
+    title: "Smart Classes",
+    subtitle:
+      "Practical Classes | E-resources | E-Learning | LMS learning | Assessments | Deep Learning Experience",
+    description:
+      "Being a professional training institute, DIDM believes in high-quality practical training as per market standard. We provide online training sessions through LMS and provide study materials in video and text format so that students can refer to the videos even if they miss any class.",
+  },
+  {
+    id: 4,
+    icon: PiCertificateBold,
+    title: "Certified Expert",
+    subtitle:
+      "Industry Expert | Google Certified Trainers | Top Mentors | Experienced Faculty",
+    description:
+      "Our trainers are qualified Google certified industry experts who adopt an interactive approach during training and focus on every individual to make them industry-ready by clearing the concepts and doubts. They also help trainees in resume building and job placements.",
+  },
+];
+
+
+export const contactBannerData = {
+  title: "Contact Us",
+  description: `Digital Vidya is a brand name of the Company “Engaging Ideas Private Limited”, 
+which was registered with the Registrar of Companies in the year 2012 and having CIN U74900DL2012PTC232239. 
+The registered office address of the Company is at C-7/6, Mianwali Nagar, Rohtak Road, New Delhi-110087 
+and the corporate office address at Unit No. 304, 3rd Floor, JMD Regent Plaza, MG Road, Gurugram, Haryana-122001.`,
+};
+
+
+export const aboutInfo = {
+  headingTop: "New Way To Learn",
+  mainHeading: "Master In Digital Marketing Course",
+  subHeading:
+    "Theory | Live Practical | Implementation | 64+ Careers | 650+ Placement Partners",
+  awardImages: [award1, award2, award3, award4],
+  cards: [
+    {
+      title: "Our Vision — Empowering Digital Learning",
+      content:
+        "Our digital marketing courses aim to help you achieve every goal in just one shot with 36+ modules. You can choose according to your need and interest. We provide 100% placement assistance with life-time support through resume-building, Q&A sessions, Google certification, and NCoEM compliance.",
+    },
+    {
+      title: "Our Vision — Shaping Future Marketers",
+      content:
+        "We guide every student with the help of top trainers and industry experts to make them market-ready. Our course is driven by innovation and a future-ready vision.",
+    },
+    {
+      title: "Our Value — Excellence, Innovation, Integrity",
+      content:
+        "Our course is driven by innovation, excellence, and integrity. We provide customized training modules that suit every learner and work on client-like projects. We build rapport and skill that help learners succeed in practical scenarios.",
+    },
+  ],
+};
+

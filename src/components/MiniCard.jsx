@@ -21,7 +21,7 @@ const MiniCard = () => {
             <img
               src={card.image}
               alt={card.text}
-              className="w-8 h-8 object-contain"
+              className="w-12 h-12 object-contain"
             />
             <p className="text-xs font-nunito font-medium transition-transform duration-300 hover:translate-x-2">
               {card.text}

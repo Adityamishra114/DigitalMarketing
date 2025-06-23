@@ -4,9 +4,9 @@ import FAQSection from "../components/FaqSection";
 import ImpactSection from "../components/ImpactSection";
 import TestimonialSlider from "../components/TestimonialSlider";
 import BlogSection from "../components/BlogSection";
-
 import MiniCard from "../components/MiniCard";
 import ContactFormSection from "../components/ContactFormSection";
+import Upskills from "../components/Upskills";
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
       <MiniCard />
       <FAQSection />
       <ImpactSection />
+      <Upskills />
       <TestimonialSlider />
       <BlogSection />
       <ContactFormSection />
