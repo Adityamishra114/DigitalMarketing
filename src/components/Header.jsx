@@ -4,7 +4,8 @@ import Logo from "../assets/logo.png";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../store";
+import { MdShoppingCart } from "react-icons/md";
+import { logout } from "../store/authSlice";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +14,15 @@ const Header = () => {
   const { isLoggedIn, user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+const cartItems = useSelector((state) => state.cart?.cart || []);
+const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const handleLogout = () => {
   dispatch(logout());
   navigate("/");
 };
-
+ 
   const handleProfileClick = () => navigate("/profile");
 
   const handleProfileEnter = () => {
@@ -42,7 +45,7 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/">
-            <img src={Logo} alt="Logo" className="h-8 w-auto" />
+            <img src={Logo} alt="Logo" className="h-12 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="hover:text-gray-600 font-semibold text-[#0e3477]">Home</Link>
@@ -52,6 +55,15 @@ const Header = () => {
             <Link to="/blog" className="hover:text-gray-600 font-semibold text-[#0e3477]">Blog</Link>
           </nav>
           <div className="hidden md:flex items-center space-x-4">
+     <Link to="/cart" className="relative flex items-center gap-2 text-gray-600 font-semibold hover:text-[#0e3477]">
+  <MdShoppingCart className="text-2xl" />
+  {cartCount > 0 && (
+    <span className="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] px-1.5 py-[1px] rounded-full">
+      {cartCount}
+    </span>
+  )}
+</Link>
+
             {!isLoggedIn ? (
               <Link to="/auth" className="text-gray-600 font-semibold hover:text-[#0e3477]">Login/Signup</Link>
             ) : (
@@ -98,13 +110,28 @@ const Header = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden mt-2 space-y-2 pb-4 border-t pt-4">
+          <div className="md:hidden mt-2 space-y-2 pb-4 border-t pt-4  ">
             <Link to="/" className="block text-gray-600 font-semibold hover:text-[#0e3477]">Home</Link>
             <Link to="/services" className="block text-gray-600 font-semibold hover:text-[#0e3477]">Services</Link>
             <Link to="/about" className="block text-gray-600 font-semibold hover:text-[#0e3477]">About</Link>
             <Link to="/contact" className="block text-gray-600 font-semibold hover:text-[#0e3477]">Contact</Link>
             <Link to="/blog" className="block text-gray-600 font-semibold hover:text-[#0e3477]">Blog</Link>
             <div className="pt-2 space-y-1">
+              <Link
+  to="/cart"
+  className="flex items-center gap-2 text-gray-600 font-semibold hover:text-[#0e3477]"
+>
+ <Link to="/cart" className="relative flex items-center gap-2 text-gray-600 font-semibold hover:text-[#0e3477]">
+  <MdShoppingCart className="text-2xl" />
+  {cartCount > 0 && (
+    <span className="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] px-1.5 py-[1px] rounded-full">
+      {cartCount}
+    </span>
+  )}
+</Link>
+
+
+</Link>
               {!isLoggedIn ? (
                 <Link to="/auth" className="block text-gray-600 font-semibold hover:text-[#0e3477]">
                   Login/Signup

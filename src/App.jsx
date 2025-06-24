@@ -13,6 +13,8 @@ import AuthTabs from "./components/AuthTabs";
 import Profile from "./pages/Profile";
 import AdminDashboard from "./pages/AdminDashboard";
 import TopBar from "./components/TopBar";
+import BlogDetails from "./pages/BlogDetails";
+import CourseDetails from "./pages/CourseDetails";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/auth" element={<AuthTabs />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin" element={<AdminDashboard />} />

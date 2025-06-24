@@ -13,9 +13,12 @@ import {
   FaUserTie,
   FaSearch, FaHandHoldingUsd,
 } from "react-icons/fa";
-
-
-
+//WhyChooseUs section images
+import { FaCheckCircle } from "react-icons/fa";
+import img1 from "./src/assets/web.jpg";
+import img2 from "./src/assets/web.jpg";
+import img3 from "./src/assets/web.jpg";
+import img4 from "./src/assets/web.jpg";
 
 // Award images About us section
 import award1 from "./src/assets/award1.webp"; 
@@ -142,6 +145,33 @@ export const blogData = [
       "Key Takeaways: These financial website designs use an intuitive flow and stellar UI/UX experience to capture site visitors' business [...]",
     category: "Marketing",
   },
+  {
+    id: 4,
+    img: blog3,
+    date: "05-29-2025",
+    title: "Top 10 Best Financial Website Designs [June 2025 Update]",
+    excerpt:
+      "Key Takeaways: These financial website designs use an intuitive flow and stellar UI/UX experience to capture site visitors' business [...]",
+    category: "Marketing",
+  },
+  {
+    id: 5,
+    img: blog3,
+    date: "05-29-2025",
+    title: "Top 10 Best Financial Website Designs [June 2025 Update]",
+    excerpt:
+      "Key Takeaways: These financial website designs use an intuitive flow and stellar UI/UX experience to capture site visitors' business [...]",
+    category: "Marketing",
+  },
+  {
+    id: 6,
+    img: blog3,
+    date: "05-29-2025",
+    title: "Top 10 Best Financial Website Designs [June 2025 Update]",
+    excerpt:
+      "Key Takeaways: These financial website designs use an intuitive flow and stellar UI/UX experience to capture site visitors' business [...]",
+    category: "Marketing",
+  },
 ];
 
 export const logos = [
@@ -177,116 +207,398 @@ export const images = [
     thumbnail: BannerHS,
   },
 ];
-
-
-export const courses = [
+export const courseDetailsList = [
   {
-    title: "Multimedia & Design",
-    description:
-      "Learn to become graphic designer, video creator, and animation artist.",
-    category: "Digital Marketing",
-    type: "Student",
+    id: "fullstack-web-dev",
+    title: "Full-Stack Web Development Bootcamp",
+    subtitle: "Become a job-ready MERN stack developer from scratch",
+    rating: 4.7,
     image: BannerC1,
-    brochure: "/data/mdm-brochure.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
+    reviewsCount: 260,
+    studentsEnrolled: 1500,
+    lastUpdated: "May 2025",
+    category: "Web Development",
+    type: "Student",
+    previewVideo: "https://example.com/fullstack-preview.mp4",
+    whatYouWillLearn: [
+      "Build dynamic websites using HTML, CSS, JS, React, and Node",
+      "Design REST APIs with Express",
+      "Use MongoDB for database operations",
+      "Deploy applications on cloud platforms",
+      "Understand Git & GitHub for version control",
+      "Create full-stack applications from scratch"
     ],
+    topics: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+    includes: [
+      "60 hours on-demand video",
+      "20 downloadable resources",
+      "Certificate of completion",
+      "Mobile and desktop access"
+    ],
+    curriculum: [
+      {
+        section: "Frontend Foundations",
+        lectures: [
+          { title: "HTML/CSS Basics", duration: "1h 20m" },
+          { title: "JavaScript Essentials", duration: "1h 45m" }
+        ]
+      },
+      {
+        section: "React Development",
+        lectures: [
+          { title: "JSX and Components", duration: "55 min" },
+          { title: "State and Props", duration: "1h 10m" }
+        ]
+      }
+    ],
+  downloadBrochure: "/data/cybersecurity-brochure.pdf",
+    requirements: [
+      "Basic computer knowledge",
+      "Willingness to learn programming"
+    ],
+    description: `This comprehensive bootcamp teaches you how to build modern web apps using the MERN stack. From HTML to deployment, this course is your gateway to a developer career.`
   },
   {
-    title: "Fullstack Web Developer",
-    description:
-      "Learn to become a full stack website developer & make your career bright.",
-    category: "Website",
-    type: "Student",
+  id: "cybersecurity-beginners",
+  title: "Cybersecurity for Beginners",
+  subtitle: "Learn the fundamentals of cyber threats, hacking, and online safety",
+  rating: 4.8,
+  image: BannerC2,
+  reviewsCount: 220,
+  studentsEnrolled: 980,
+  lastUpdated: "April 2025",
+  category: "Cybersecurity",
+  type: "Student",
+    price: 2999,
+  salePrice: 1499,
+  previewVideo: "https://example.com/cybersecurity-intro.mp4",
+  whatYouWillLearn: [
+    "Understand cyber attacks and prevention techniques",
+    "Use tools like Wireshark & Kali Linux",
+    "Identify phishing, malware, and data leaks",
+    "Practice safe browsing and password strategies",
+    "Intro to ethical hacking and cybersecurity careers"
+  ],
+  topics: ["Cybersecurity", "Ethical Hacking", "Network Security"],
+  includes: [
+    "18 hours video",
+    "10 practical labs",
+    "Certificate included",
+    "Runs on all devices"
+  ],
+  curriculum: [
+    {
+      section: "Threat Basics",
+      lectures: [
+        { title: "What is Cybersecurity?", duration: "30 min" },
+        { title: "Types of Attacks", duration: "40 min" }
+      ]
+    },
+    {
+      section: "Tools & Defense",
+      lectures: [
+        { title: "Wireshark and Packet Analysis", duration: "55 min" },
+        { title: "Safe Browsing Habits", duration: "35 min" }
+      ]
+    }
+  ],
+  requirements: [
+    "Interest in IT or security",
+    "No technical background needed"
+  ],
+  description: `Kickstart your cybersecurity journey with this beginner-friendly course. Great for students exploring security and ethical hacking careers.`
+}
+,
+  {
+    id: "graphic-design-pro",
+    title: "Graphic Design Masterclass",
+    subtitle: "Master Photoshop, Illustrator & design theory from scratch",
+    rating: 4.6,
     image: BannerC2,
-    brochure: "/data/fullstack-brochure.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
-    ],
-  },
-  {
-    title: "ADCA",
-    description:
-      "You’ll be eligible in accounting, graphic design, and web designing.",
-    category: "Popular",
+    reviewsCount: 180,
+    studentsEnrolled: 950,
+    lastUpdated: "April 2025",
+    category: "Design",
     type: "Student",
-    image: BannerC3,
-    brochure: "/data/adca-brochure.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
+    previewVideo: "https://example.com/design-preview.mp4",
+    whatYouWillLearn: [
+      "Use Photoshop for digital design",
+      "Create logos and branding",
+      "Understand typography & color theory",
+      "Design posters, brochures, and ads",
+      "Work with Illustrator shapes and paths"
     ],
+    topics: ["Photoshop", "Illustrator", "Typography", "Branding"],
+    includes: [
+      "30 hours on-demand video",
+      "12 downloadable files",
+      "Certificate of completion"
+    ],
+    curriculum: [
+      {
+        section: "Design Basics",
+        lectures: [
+          { title: "Color Theory", duration: "30 min" },
+          { title: "Typography Essentials", duration: "45 min" }
+        ]
+      },
+      {
+        section: "Tool Mastery",
+        lectures: [
+          { title: "Photoshop Interface", duration: "35 min" },
+          { title: "Logo Design in Illustrator", duration: "1h 5m" }
+        ]
+      }
+    ],
+      price: 2999,
+  salePrice: 1499,
+    requirements: [
+      "No prior design knowledge required",
+      "Access to Adobe software preferred"
+    ],
+    description: `Learn graphic design tools and principles to become a creative professional. Whether you're designing for print or web, this course gets you job-ready.`
   },
   {
-    title: "Corporate Upskilling",
-    description: "Advanced tech training tailored for teams.",
+    id: "data-analytics-excel",
+    title: "Data Analytics with Excel for Beginners",
+    subtitle: "Analyze business data using advanced Excel techniques",
+    rating: 4.5,
+    image: BannerC3,
+    reviewsCount: 100,
+    studentsEnrolled: 700,
+      price: 2999,
+  salePrice: 1499,
+    lastUpdated: "March 2025",
+    category: "Data Analysis",
+    type: "Student",
+    previewVideo: "https://example.com/excel-preview.mp4",
+    whatYouWillLearn: [
+      "Use PivotTables and charts",
+      "Clean and prepare data",
+      "Perform statistical analysis",
+      "Automate tasks with formulas",
+      "Create interactive dashboards"
+    ],
+    topics: ["Excel", "Data Cleaning", "Dashboards", "Formulas"],
+    includes: [
+      "20 hours on-demand video",
+      "Excel datasets included",
+      "Certificate of completion"
+    ],
+    curriculum: [
+      {
+        section: "Data Basics",
+        lectures: [
+          { title: "Working with Tables", duration: "25 min" },
+          { title: "Functions & Logic", duration: "40 min" }
+        ]
+      },
+      {
+        section: "Visualization",
+        lectures: [
+          { title: "Pivot Tables", duration: "35 min" },
+          { title: "Dashboards", duration: "45 min" }
+        ]
+      }
+    ],
+    requirements: [
+      "Basic Excel familiarity",
+      "Access to Microsoft Excel (2016+)"
+    ],
+    description: `Master Excel for data analysis. Learn how to manipulate, analyze, and visualize real business data with powerful spreadsheet techniques.`
+  },
+  {
+    id: "team-ai-automation",
+    title: "AI Automation for Business Teams",
+    subtitle: "Empower your team to automate workflows using ChatGPT and tools",
+    rating: 4.9,
+    image: BannerC1,
+    reviewsCount: 75,
+    studentsEnrolled: 300,
+    lastUpdated: "June 2025",
     category: "Corporate Training",
     type: "Business",
-    image: BannerC1,
-    brochure: "/data/corporate-upskill.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
+    previewVideo: "https://example.com/business-ai.mp4",
+    whatYouWillLearn: [
+      "Identify automation opportunities in teams",
+      "Use ChatGPT for document creation",
+      "Create SOPs and scripts using AI",
+      "Train non-tech teams to use no-code tools"
     ],
+    topics: ["AI", "Productivity", "Automation", "Teamwork"],
+    includes: [
+      "10 hours video training",
+      "Templates for SOPs and flows",
+      "Access for 1 year"
+    ],
+  downloadBrochure: "/data/cybersecurity-brochure.pdf",
+    curriculum: [
+      {
+        section: "Getting Started",
+        lectures: [
+          { title: "What is AI Automation?", duration: "20 min" },
+          { title: "Choosing No-Code Tools", duration: "30 min" }
+        ]
+      },
+      {
+        section: "Use Cases",
+        lectures: [
+          { title: "HR Automation", duration: "25 min" },
+          { title: "Marketing Content Generation", duration: "35 min" }
+        ]
+      }
+    ],
+    requirements: ["Team management access", "Willingness to change workflows"],
+    description: `This course enables managers and leads to introduce AI-based automation to their teams using ChatGPT and simple tools — no coding required.`
   },
   {
-    title: "Team Leadership Workshop",
-    description:
-      "Boost leadership skills and collaboration across departments.",
-    category: "Workshops",
-    type: "Business",
+    id: "leadership-communication",
+    title: "Effective Leadership Communication",
+    subtitle: "Train managers and executives to lead with clarity and impact",
+    rating: 4.7,
     image: BannerC2,
-    brochure: "/data/leadership-workshop.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
-    ],
-  },
-  {
-    title: "Technical Team Upskilling",
-    description: "Improve your team’s productivity and performance.",
-    category: "Team Upskilling",
+    reviewsCount: 55,
+     price: 2999,
+  salePrice: 1499,
+    studentsEnrolled: 180,
+    lastUpdated: "Feb 2025",
+    category: "Leadership",
     type: "Business",
-    image: BannerC3,
-    brochure: "/data/tech-upskill.pdf",
-    bulletPoints: [
-      "In Class | Online",
-      "500+ Hrs Training",
-      "02 Months Internship",
-      "Recording (LMS) | Live Session",
-      "Live Projects",
-      "E-Notes & E-Books",
-      "30+ Certifications",
+    previewVideo: "https://example.com/leadership-preview.mp4",
+    whatYouWillLearn: [
+      "Build trust through clear messaging",
+      "Handle conflicts and feedback effectively",
+      "Present confidently in meetings",
+      "Improve email and verbal communication"
     ],
-  },
+    topics: ["Leadership", "Communication", "Soft Skills"],
+    includes: [
+      "6 hours training",
+      "Printable resources",
+      "Trainer support access"
+    ],
+    curriculum: [
+      {
+        section: "Foundations",
+        lectures: [
+          { title: "What Makes a Good Leader?", duration: "15 min" },
+          { title: "Building Empathy in Teams", duration: "30 min" }
+        ]
+      },
+      {
+        section: "Practical Exercises",
+        lectures: [
+          { title: "Active Listening", duration: "20 min" },
+          { title: "Handling Difficult Conversations", duration: "40 min" }
+        ]
+      }
+    ],
+    requirements: [
+      "Mid or senior level managers preferred",
+      "Team of 3+ people to apply lessons"
+    ],
+    description: `This course trains business leaders in mastering the art of communication, motivating teams, and solving workplace conflict with confidence.`
+  },{
+  id: "digital-team-upskilling",
+  title: "Digital Team Upskilling Program",
+  subtitle: "Empower your marketing and sales teams with practical AI and digital tools",
+  rating: 4.6,
+  image: BannerC3,
+  downloadBrochure: "/data/cybersecurity-brochure.pdf",
+  reviewsCount: 110,
+  studentsEnrolled: 950,
+  lastUpdated: "May 2025",
+  category: "Corporate Training",
+  type: "Business",
+  previewVideo: "https://example.com/digital-teams.mp4",
+  whatYouWillLearn: [
+    "Boost productivity using ChatGPT and AI tools",
+    "Automate repetitive tasks and content writing",
+    "Collaborate efficiently using digital project tools",
+    "Improve email and ad copy with AI support",
+    "Upskill sales & marketing team with trending tools"
+  ],
+  topics: ["ChatGPT", "Trello", "Slack", "CRM Tools", "Automation"],
+  includes: [
+    "20 hours on-demand video",
+    "8 downloadable resources",
+    "Team certificates",
+    "Cross-device access"
+  ],
+  curriculum: [
+    {
+      section: "AI Integration in Marketing",
+      lectures: [
+        { title: "Using AI for Email Campaigns", duration: "35 min" },
+        { title: "Creating Ad Copies With ChatGPT", duration: "28 min" }
+      ]
+    },
+    {
+      section: "Digital Tools",
+      lectures: [
+        { title: "CRM for Lead Management", duration: "42 min" },
+        { title: "Project Tools (Trello, Notion)", duration: "50 min" }
+      ]
+    }
+  ],
+  requirements: [
+    "Working marketing/sales team",
+    "Basic computer skills"
+  ],
+  description: `This course is designed to enhance business team efficiency using digital tools and AI-powered strategies. Perfect for marketing and sales departments seeking digital transformation.`
+},{
+  id: "corporate-leadership-essentials",
+  title: "Corporate Leadership Essentials",
+  subtitle: "Lead high-performing teams and manage change effectively",
+  rating: 4.9,
+  image: BannerC1,
+  reviewsCount: 190,
+  studentsEnrolled: 600,
+  lastUpdated: "April 2025",
+  category: "Leadership",
+  type: "Business",
+  previewVideo: "https://example.com/leadership-preview.mp4",
+  whatYouWillLearn: [
+    "Understand modern leadership frameworks",
+    "Handle remote and hybrid teams",
+    "Drive innovation and team accountability",
+    "Practice emotional intelligence in leadership",
+    "Plan and implement change in organizations"
+  ],
+  topics: ["Leadership", "Team Management", "Change Management", "Communication"],
+  includes: [
+    "15 hours video",
+    "10 downloadable templates",
+    "Certificate for managers",
+    "Works on all devices"
+  ],
+  downloadBrochure: "/data/cybersecurity-brochure.pdf",
+  curriculum: [
+    {
+      section: "Leadership Mindset",
+      lectures: [
+        { title: "Principles of Modern Leadership", duration: "40 min" },
+        { title: "Managing Across Generations", duration: "35 min" }
+      ]
+    },
+    {
+      section: "Change & Growth",
+      lectures: [
+        { title: "Driving Innovation", duration: "45 min" },
+        { title: "Handling Team Conflicts", duration: "50 min" }
+      ]
+    }
+  ],
+  requirements: [
+    "Mid to senior management roles",
+    "Experience working in teams"
+  ],
+  description: `Ideal for business leaders looking to inspire their teams, drive change, and create a growth-driven company culture.`
+}
+
+
 ];
+
 
 export const impactItems = [
   { title: 650, suffix: "+", description: "Websites Launched" },
@@ -676,3 +988,87 @@ export const bannerContent = {
   paragraph:
     "Empowering learners through industry-ready digital marketing courses, live mentorship, and hands-on training.",
 };
+export const features12 = [
+  "Get Paid Internship & Placements",
+  "100% Placement Assistance",
+  "Interactive Live Training",
+  "Creative Portfolio Building",
+  "Weekly Assignments To Gain Realtime Practical Knowledge.",
+  "Premium Workshops on Latest Updates",
+];
+
+export const images12 = [img1, img2, img3, img4];
+
+export const almunies = [
+  {
+    name: "Anuj Sangal",
+    title: "Youtuber",
+    company: "Anuj Classes",
+    message:
+      "Excellent institute for Digital Marketing and it has helped me to get my dream job and given me wings to fly. The Faculty members are very experienced and with the help of their best practices, we have gained a lot of practical knowledge.",
+    image: img1,
+    color: "text-red-600",
+  },
+  {
+    name: "Nidhi Seth",
+    title: "Graphic Designer",
+    company: "ET Creatives",
+    message:
+      "I recommend DG Royals institute for Graphic Designing. I had a great experience studying with them and if they say they mean it, they really have an internship program along with a course & excellent placement program for all the trainees.",
+    image: img2,
+    color: "text-pink-600",
+  },
+  {
+    name: "Rahul Sharma",
+    title: "Graphic Designer",
+    company: "Periscope",
+    message:
+      "I did a master's in Graphic Designing from DG Royals and I am so delighted to choose this institute since it has turned my dream into reality. Now I have an excellent knowledge of Industrial Brand designs, advertising & Illustrations.",
+    image: img3,
+    color: "text-red-500",
+  },
+];
+export const services = [
+  {
+    title: "Search Engine Optimization",
+    description:
+      "50,000+ websites ranked on top of search results across multiple countries",
+    icon: "https://cdn-icons-png.flaticon.com/512/979/979585.png",
+  },
+  {
+    title: "Blogging",
+    description:
+      "5,000+ blogs published across various platforms and websites",
+    icon: "https://cdn-icons-png.flaticon.com/512/3524/3524388.png",
+  },
+  {
+    title: "Paid Advertising",
+    description:
+      "400% average ROI for 4,000+ successful campaigns",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968527.png",
+  },
+  {
+    title: "Email Marketing",
+    description:
+      "15% email open rate & high CTR for 10,000+ successful campaigns",
+    icon: "https://cdn-icons-png.flaticon.com/512/5611/5611180.png",
+  },
+  {
+    title: "Social Media Marketing",
+    description:
+      "Complete social media management across all major platforms",
+    icon: "https://cdn-icons-png.flaticon.com/512/145/145802.png",
+  },
+  {
+    title: "Website Development",
+    description:
+      "200+ websites developed with modern technologies and responsive design",
+    icon: "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+  },
+  {
+    title: "Content Marketing",
+    description:
+      "High-quality content creation for websites, blogs, and social media",
+    icon: "https://cdn-icons-png.flaticon.com/512/942/942748.png",
+  },
+];

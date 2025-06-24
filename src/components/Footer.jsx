@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 pt-12 pb-8 px-6 sm:px-12 lg:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="md:col-span-1 col-span-2">
-          <img src={logo} alt="IFDA Logo" className="h-10 mb-4" />
+          <img src={logo} alt="IFDA Logo" className="h-30 mb-4" />
           <p className="text-sm">
             Ifda is your go-to platform for career-focused digital marketing & technology courses designed for today’s job market.
           </p>

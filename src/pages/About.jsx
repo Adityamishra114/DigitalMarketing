@@ -8,6 +8,8 @@ import bannerImg from "../assets/Digital2.jpeg"
 import AboutInfo from '../components/AboutInfo'
 import { bannerContent } from '../../data'
 import ImpactSection from '../components/ImpactSection'
+import WhyChooseUs from '../components/WhyChooseUs'
+import AlmuniSlider from '../components/AlmuniSlider'
 
 const About = () => {
   return (
@@ -19,8 +21,10 @@ const About = () => {
       />
     <AboutInfo />
      <ImpactSection />
+    <WhyChooseUs />
+    <AlmuniSlider/> 
     <AboutHeroSection />
-    <OurClients/> 
+    <OurClients/>
     <ContactForm/>
     </>
   )

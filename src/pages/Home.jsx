@@ -11,22 +11,28 @@ import CertificatesSection from "../components/CertificatesSection";
 import HeroMain from "../components/HeroMain";
 import TopCompanies from "../components/TopCompanies";
 import FeatureSummary from "../components/FeatureSummary";
+import { blogData } from "../../data";
 
 const Home = () => {
   return (
     <>
-    <HeroMain/>
-    <TopCompanies/>
-    <FeatureSummary/>
-      {/* <HomeBanner /> */}
+      <HeroMain />
+      <FeatureSummary />
+      <TopCompanies />
       <CourseTabs />
       <MiniCard />
-      <FAQSection />  
+      <FAQSection />
       <Upskills />
       <TestimonialSlider />
-      <CourseRoadmap/>
-      <BlogSection />
-      <CertificatesSection/>
+      <CourseRoadmap />
+      <BlogSection
+        heading="Blog"
+        paragraph="Check back every week for inspiring articles on website design and digital marketing to help build and expand your digital presence."
+        blogData={blogData}
+        showTabs={true}
+        maxBlogs={3}
+      />
+      <CertificatesSection />
       <ContactFormSection />
     </>
   );

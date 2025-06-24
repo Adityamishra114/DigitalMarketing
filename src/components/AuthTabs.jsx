@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../store";
+import { login } from "../store/authSlice";
+
 
 const AuthTabs = () => {
   const [activeTab, setActiveTab] = useState("signup");
